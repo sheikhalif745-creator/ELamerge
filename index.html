@@ -719,8 +719,6 @@
   <script>
     let enteredPass = "";
     const correctPass = "1234";
-    // দ্বিতীয় পেজের ফাইল নাম (যেমন "chithi.html" বা "heart.html") এখানে দিন
-    const targetPage = "chithi.html";
 
     function triggerHeartArrowSequence(btnEl) {
       if (!btnEl) return;
@@ -837,7 +835,7 @@
       if (enteredPass.length === 4) {
         if (enteredPass === correctPass) {
           setTimeout(() => {
-            window.location.href = targetPage;
+            window.location.href = 'heart.html';
           }, 900);
         } else {
           setTimeout(() => {
